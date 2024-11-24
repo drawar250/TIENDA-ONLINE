@@ -1,58 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rambo</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        .container {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat en Tiempo Real</title>
+  <!-- Enlace al archivo CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<div class="container">
-    <h1>LUCERO !!!! ESCUCHA LA RENGA !!!! </h1>
-    <img src="https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FsYHRcd9p3rV3t3w8MHGaA7wdIBl.jpg&w=640&q=75" alt="Rambo">
-
-    <h2>Descripción</h2>
-    <p><strong>Rambo</strong> es una icónica película de acción lanzada en 1982, dirigida por Ted Kotcheff. La historia sigue a John Rambo, un ex soldado de las Fuerzas Especiales, interpretado por Sylvester Stallone. Después de haber sobrevivido a la Guerra de Vietnam, Rambo se encuentra en una lucha constante con sus traumas pasados mientras intenta adaptarse a la vida civil. Cuando se enfrenta a la injusticia y la brutalidad en un pequeño pueblo, se ve obligado a usar sus habilidades militares para luchar por su supervivencia.</p>
-
-    <h2>Género</h2>
-    <ul>
-        <li>Acción</li>
-        <li>Aventura</li>
-        <li>Bélica</li>
-    </ul>
-
-    <h2>Director</h2>
-    <p>Ted Kotcheff</p>
-
+  <!-- Contenedor principal del chat -->
+  <div class="chat-container">
+    <!-- Zona donde se muestran los mensajes -->
+    <div id="chat-box" class="chat-box"></div>
     
-    </ul>
-
-    <h2>Sinopsis</h2>
-    <p>Después de ser arrestado por el sheriff de un pequeño pueblo, Rambo descubre que su pasado en Vietnam lo persigue. Al escapar de la custodia policial, se adentra en el bosque, donde utiliza su ingenio y habilidades de combate para evadir a las autoridades. A medida que avanza la historia, Rambo se convierte en un símbolo de resistencia y lucha por los derechos de los veteranos.</p>
-
-    <h2>¿Dónde ver?</h2>
-    <p>ACÁ PODES VER FREECODECAMP JAVASCRIPT EN <a href="https://youtu.be/ivdTnPl1ND0?si=T5o3r0ej3_AI5ZfI" target="_blank">YOUTUBE</a>.</p>
-</div>
-https://youtu.be/ivdTnPl1ND0?si=T5o3r0ej3_AI5ZfI 
+    <!-- Formulario para enviar mensajes -->
+    <form id="chat-form" class="chat-form">
+      <input 
+        type="text" 
+        id="message-input" 
+        placeholder="Escribe un mensaje..." 
+        required>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+  
+  <!-- Enlace al archivo de JavaScript -->
+  <script type="module" src="app.js"></script>
 </body>
 </html>
