@@ -22,7 +22,7 @@
 
     <script>
         const chat = document.getElementById("chat");
-        const socket = new WebSocket("wss://TUSERVICIODEBACKEND.com"); // Cambia por tu servidor WebSocket
+        const socket = new WebSocket("https://realtime-ec549-default-rtdb.firebaseio.com"); // Cambia por tu servidor WebSocket
 
         socket.onmessage = (event) => {
             const message = document.createElement("div");
