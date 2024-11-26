@@ -1,0 +1,39 @@
+/* Estilos para el área del juego */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+}
+
+#gameArea {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: #000;
+    border: 2px solid #fff;
+    overflow: hidden;
+}
+
+/* Estilo de la barra */
+#bar {
+    position: absolute;
+    bottom: 20px;
+    left: 250px;
+    width: 100px;
+    height: 20px;
+    background-color: #fff;
+}
+
+/* Estilo de la pelota */
+#ball {
+    position: absolute;
+    top: 200px;
+    left: 290px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+}
